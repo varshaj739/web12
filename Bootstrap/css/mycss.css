@@ -1,0 +1,279 @@
+.collapse{
+    margin-left:15rem;
+}
+.navbar-nav a::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgb(252, 162, 52);
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+.navbar-nav a:hover::after{
+    width:100%;
+}
+.carousel .carousel-item {
+    height: 500px;
+  }
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+  }
+
+.heading{
+    text-align:center;
+    padding:2.5rem 0;
+}
+.heading span{
+    font-size:3.5rem;
+    background:rgba(255,165,0.2);
+    color:darkred;
+    border-radius:0.5rem;
+    padding: 0.2rem 1rem;
+}
+.heading span.space{
+    background:none;
+}
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.book .row .image{
+    flex:1 1 40rem;
+}
+.book .row .image img{
+    width:100%;
+}
+.book .row form{
+    flex:1 1 40rem;
+    padding:2rem;
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.1);
+    border-radius:0.5rem;
+}
+.book .row form .inputbox{
+    padding:0.5rem 0;
+
+}
+.book .row form .inputbox input{
+    width: 100%;
+    padding:1rem;
+    border:0.1rem solid rgba(0,0,0.1);
+    font-size:1.7rem;
+    color:#333;
+    text-transform: none;    
+}
+.book .row form .inputbox input h3{
+    font-size: 2rem;
+    padding:1rem 0;
+    color:#666;
+}
+.card-deck {
+    margin-left: 5rem;
+}
+.packages .card-deck .card{
+    display: inline-block;
+    margin:5px;
+    box-shadow:0 1rem 2rem rgba(0, 0, 1, 0.425)
+}
+.packages .card-deck .card:hover{
+    box-shadow:0 1rem 2rem rgba(0,0,0.1);
+    border:1px solid black;
+}
+.packages .card-deck .card button{
+    color:darkred;
+    font-weight: bold;
+    float: right;
+}
+.packages .card-deck .card h3 i{
+    color: orange;
+}
+.packages .card-deck .card .stars i{
+    font-size:1.7rem;
+    color:orange;
+}
+.packages .card-deck .card .price{
+    font-weight: bold;
+}
+
+.services .card-deck .card{
+    display: inline-block;
+    margin:5px;
+    box-shadow:0 1rem 2rem rgba(0, 0, 1, 0.425)
+}
+.services .card-deck .card:hover{
+    border:1px solid orange;
+}
+.services .card-deck .card .card-body i{
+    color: orange;
+    font-size:2rem;
+    text-align: center;
+    width:100%;
+}
+.services .card-deck .card .card-body h3{
+    font-size:2rem;
+    text-align: center;
+    width:100%;
+    color:darkred;
+}
+.services .card-deck .card .card-body .card-text{
+    text-align: center;
+}
+.card-deck{
+    margin-left:5rem;
+}
+.gallery .card-deck .card{
+    display: inline-block;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left:20px;
+    box-shadow:0 1rem 2rem rgba(0, 0, 1, 0.425)
+}
+.gallery .card-deck .card:hover{
+    border:1px solid #333;
+}
+
+.gallery .card-deck .card .overlay{
+    position:absolute;
+    bottom:100%;
+    left:0;
+    right:0;
+    background-color: rgba(51, 51, 51, 0.562);
+    overflow:hidden;
+    width:100%;
+    height:0;
+    transition:0.5 ease;
+}
+.gallery .card-deck .card:hover .overlay{
+    bottom:0;
+    height: 100%;
+}
+
+.gallery .card-deck .card .overlay h3{
+    text-align: center;
+    color:orange;
+    margin-top: 2px;
+}
+
+.gallery .card-deck .card .overlay p{
+    color:white;
+    text-align: center;
+}
+
+.gallery .card-deck .card .overlay button{
+    color:white;
+    font-weight: bold;
+    margin:10px;
+    margin-left: 7rem;
+}
+
+.contact-form{
+    display: inline-block;
+    margin-left:2rem;
+}
+.contact-form image{
+    margin-left:2rem;
+}
+.contact-form form{
+    float:right;
+}
+input[type=text], input[type=number], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=submit] {
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  } 
+  input[type=submit]:hover {
+    background-color: darkorange;
+  } 
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer
+{
+    margin:10px 0px;
+    background-color: #333;
+}
+footer h2
+{
+    text-align:center;
+    text-transform:capitalize;
+    border-bottom: 2px solid black;
+    color:white;
+}
+footer p
+{
+    text-align:center;
+    font-size:1.1em;
+    color:white;
+}
+footer ul
+{
+    list-style: none;
+    color:white;
+}
+footer ul a
+{
+    text-decoration:none;
+    color:white;
+}
+footer ul li
+{
+    text-align:center;
+    font-size:1.2em;
+    font-weight:bold;
+    color:white;
+}
+#copyright
+{
+    position:relative;
+    top:50px;
+    color:white;
+}
+
+@media (max-width:450px){
+    .heading span{
+        font-size:2.5rem;
+    }
+}
